@@ -1,0 +1,58 @@
+/*标题栏*/
+#page-header.nav-visible #nav {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(50px);
+}
+
+/*搜索框美化*/
+.search-dialog {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+}
+
+#search-mask {
+    background: rgba(255,255,255,0);
+}
+
+#aside-content > .card-widget:first-child {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #00a8ff; /* 添加青色边框 */
+}
+
+#aside-content .card-widget {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #00a8ff; /* 添加青色边框 */
+}
+
+.layout > div:first-child:not(.recent-posts) {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #00a8ff; /* 添加青色边框 */
+}
+
+#web_bg {
+    background-image: url("/img/12.jpg"),
+        linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35))
+}
+
+#recent-posts > .recent-post-item:not(a)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  transform: translateX(-200%);
+  transition: transform 0.5s linear;
+  z-index: 1;
+}
+#recent-posts > .recent-post-item:not(a):hover::before {
+  transform: translateX(100%) skewX(-60deg);
+}
+
+
+
+
+
+
